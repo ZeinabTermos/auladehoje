@@ -3,6 +3,8 @@ var cont = 0;
 var numEsco =[];
 
 function sorteio (){
+    if(numEsco.length==6){
+        
     var cont = 0;
     numSort=[]
     while(cont < 6){
@@ -17,6 +19,9 @@ function sorteio (){
     } 
     document.getElementById("sorteados").innerHTML = numSort;
     contAcertos();
+}else{
+    alert("É necessário digitar os seis números antes do sorteio")
+}
 }
 function getValor(valor, pos){
     valor = Number(valor);
